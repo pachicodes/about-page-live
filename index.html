@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Pachi</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="bar"></header>
+
+    <section class="hero" id="hero">
+      <div class="flex-wrapper">
+        <div class="intro">
+          <h1>Hi <span id="name"></span>, I am Pachi :)</h1>
+          <h3>Welcome to my page!</h3>
+          <h4>
+            I am a developer in development, eager to learn new skills and level
+            up the skills I already have.
+          </h4>
+        </div>
+        <div class="contact">
+          <p class="contact-title">Get in touch!</p>
+          <div class="social">
+            <a href="https://twitter.com/pachicodes" target="_blank">
+              <img
+                class="icon"
+                src="img/icons/twitter.png"
+                alt="twitter icon"
+              />
+            </a>
+            <a href="https://github.com/pachicodes" target="_blank">
+              <img class="icon" src="img/icons/github.png" alt="github icon" />
+            </a>
+            <a href="https://linkedin.com/in/pachicodes" target="_blank">
+              <img
+                class="icon"
+                src="img/icons/linkedin.png"
+                alt="linkedin icon"
+              />
+            </a>
+            <a href="https://twitch.tv/pachicodes" target="_blank">
+              <img class="icon" src="img/icons/twitch.png" alt="twitch icon" />
+            </a>
+            <a href="mailto:pachicodes@gmail.com" target="_blank">
+              <img class="icon" src="img/icons/mail.png" alt="email icon" />
+            </a>
+          </div>
+        </div>
+        <button id="button">Click Me!</button>
+      </div>
+      <div>
+        <img class="pachi-pic" src="img/pachi-pic.jpg" alt="this is Pachi" />
+      </div>
+    </section>
+    <section class="about">
+      <h2>About Me</h2>
+      <div class="holder">
+        <div class="card">
+          <img src="" alt="" />
+          <p class="card-title">Skills</p>
+          <ul class="card-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git & Github</li>
+          </ul>
+        </div>
+        <div class="card">
+          <img src="" alt="" />
+          <p class="card-title">Experience</p>
+          <ul class="card-list">
+            <li>Web Developer</li>
+            <li>Writter</li>
+            <li>Streamer</li>
+          </ul>
+        </div>
+        <div class="card">
+          <img src="" alt="" />
+          <p class="card-title">Hobbies</p>
+          <ul class="card-list">
+            <li>Read</li>
+            <li>Watch anime</li>
+            <li>Go for walks</li>
+            <li>Bake</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bar"></footer>
+    <script>
+      let person = prompt("What's your name?");
+      let name = document.getElementById("name");
+      const button = document.getElementById("button");
+      const hero = document.getElementById("hero");
+
+      name.innerHTML = person;
+      button.addEventListener("click", function () {
+        hero.classList.toggle("new-bg");
+      });
+    </script>
+  </body>
+</html>

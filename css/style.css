@@ -1,0 +1,143 @@
+body {
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+h1,
+h2,
+.contact-title,
+.card-title {
+  color: #0113ba;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 42px;
+  line-height: 57px;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 39px;
+  line-height: 53px;
+  text-align: center;
+}
+
+h3 {
+  color: #4759ff;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.hero,
+.holder {
+  display: flex;
+  justify-content: center;
+}
+
+.hero {
+  padding: 50px;
+}
+
+.flex-wrapper {
+  width: 25%;
+  margin-right: 200px;
+}
+
+.icon {
+  padding: 15px;
+}
+
+.pachi-pic {
+  width: 200px;
+  border-radius: 50%;
+  border: solid 4px #b3b6ff;
+}
+
+.contact-title {
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.about {
+  background: linear-gradient(
+      254.7deg,
+      rgba(255, 255, 255, 0.43) 0%,
+      rgba(239, 227, 247, 0.43) 47.81%,
+      rgba(189, 192, 255, 0.43) 111.46%
+    ),
+    #ffffff;
+  margin: 70px auto;
+  padding: 50px;
+}
+
+.card {
+  width: 180px;
+  height: 240px;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px rgba(1, 19, 186, 0.32);
+  border-radius: 12px;
+  margin: 20px 50px;
+}
+
+.card-title {
+  font-weight: bold;
+  padding: 20px;
+}
+
+ul {
+  text-align: left;
+}
+li {
+  padding: 10px;
+}
+
+.bar {
+  background-color: #bb5eff;
+  height: 35px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+button {
+  font-size: 28px;
+  padding: 8px 40px;
+  background-color: #b3b6ff;
+  border: none;
+  border-radius: 12px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.new-bg {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+a {
+  text-decoration: none;
+}
+@media only screen and (max-width: 600px) {
+  .hero,
+  .holder {
+    flex-wrap: wrap;
+  }
+
+  .flex-wrapper {
+    width: 100%;
+    margin-right: 10px;
+  }
+}
